@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@font-face {
+    font-family: 'Rich-Eatin';
+    src: url('fontz/Rich-Eatin.otf') format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Domine";
+    color: aliceblue;
+}
+html,body{
+    background-color: black;
+    background-image: url(imagez/undefined-Imgur.gif);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.main-header a{
+    text-decoration: none;
+    color: silver;
+    padding: .5em;
+}
+.main-name{
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 85px;
+    font-family: 'Rich-Eatin';
+    font-weight: normal;
+    font-size: 8em;
+}
+#flavor-imgs{
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+    height: 250px;
+    width: 160px;
+    background: url(imagez/majestic12.png);
+}
+#flavor-imgs2{
+    position: absolute;
+    left: -300px;
+    bottom: -500px;
+    height: 250px;
+    width: 160px;
+    background: url(imagez/majestic12.png);
+}
+#flavor-imgs3{
+    position: absolute;
+    left: 1200px;
+    bottom: 0;
+    height: 250px;
+    width: 160px;
+    background: url(imagez/majestic12.png);
+}
+#flavor-imgs4{
+    position: absolute;
+    left: 1200px;
+    bottom: -500px;
+    height: 250px;
+    width: 160px;
+    background: url(imagez/majestic12.png);
+}
+.content-section{
+    margin: 1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.btn{
+    text-align: start;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+.btn-preview:focus{
+    outline-style: solid;
+    outline-color: rgba(106, 168, 255, 0.9);
+}
+.btn-primary{
+    border: none;
+    background-color: rgba(0,0,0,.01);
+}
+.btn-image1{
+    background-image: url("imagez/blackfiller.png");
+    background-position: center;
+    background-size: contain;
+}
+.btn-image1:hover{
+    background-image: url("imagez/blackfillerback.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-image2{
+    background-image: url("imagez/whitefillerfront.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn-image2:hover{
+    background-image: url("imagez/whitefiller.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.btn-image3{
+    background-image: url("imagez/redfiller.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn-image4{
+    background-image: url("imagez/yellowfiller.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn-change{
+    font-size: 1em;
+    padding: .33em;
+}
+.btn-addtocart{
+    text-align: center;
+    width: 350px;
+    background-color: red;
+    color: black;
+    padding: 1em;
+    margin: 50px auto 150px auto;
+}
+.footer-text{
+    text-align: center;
+}
+.footer-image{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+.shop-item{
+    margin: 30px;
+}
+.shop-item-image{
+    width: 300px;
+    height: 300px;
+    filter: opacity(0%);
+}
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-item-price{
+    flex-grow: 1;
+    font-size: 1.25em;
+    text-align: center;
+}
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.view-item{
+    display: flex;
+    justify-content: space-between;
+}
+.view-item-name{
+    font-size: 1.25em;
+    color: gray;
+}
+
+.view-item-image{
+    margin-top: 200px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 500px;
+    float: left;
+    cursor: crosshair;
+}
+.view-item-title{
+    font-size: 2em;
+    padding-top: 1.5em;
+}
+.view-item-price{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.size-selector{
+    width: 350px;
+    height: 2.5em;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    padding: .5em;
+    vertical-align: middle;
+    font-size: 1.001em;
+    color: black;
+}
+.size-selector option{
+    color: black;
+}
+.view-quantity{
+    width: 75px;
+    padding: 1em;
+    color: black;
+}
+.preview-images{
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+}
+.btn-preview{
+    cursor: auto;
+    padding: 0;
+    height: 50px;
+}
+.container-description{
+    max-width: 500px;
+}
+.container-description li{
+    padding: .12em;
+}
+.container-description ul{
+    list-style-type: circle;
+    padding-bottom: 2em;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+.close{
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
